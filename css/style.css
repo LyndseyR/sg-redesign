@@ -27,6 +27,9 @@ h4 {
   font-size: 28px;
   font-weight: 500; }
 
+button {
+  outline: 0; }
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -42,12 +45,12 @@ h4 {
   .mobile-nav img {
     height: 50px; }
   .mobile-nav .donate {
-    padding: 5px 30px;
+    padding: 5px 25px;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 8px;
     outline-color: #fff;
-    width: 40%; }
+    width: 35%; }
     .mobile-nav .donate a {
       color: #fff;
       text-decoration: none;
@@ -95,6 +98,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 25px;
     max-width: 960px;
     margin: 0 auto; }
     header .desktop-nav img {
@@ -278,13 +282,30 @@ footer {
 .good-dog {
   background-color: #F98A5F; }
 
+.spotlight, .sign-up {
+  height: 225px; }
+  .spotlight button, .sign-up button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    font-weight: 700;
+    outline: none; }
+    .spotlight button a, .sign-up button a {
+      color: #fff;
+      text-decoration: none; }
+  .spotlight button:hover, .sign-up button:hover {
+    background: #fff; }
+    .spotlight button:hover a, .sign-up button:hover a {
+      color: #28BE9B; }
+
 .spotlight {
   background-color: #92DCE0;
   margin: 0 5px 15px;
   width: 58%;
-  float: left;
-  clear: both;
-  height: 210px; }
+  float: left; }
   .spotlight img {
     float: left;
     display: block;
@@ -300,45 +321,81 @@ footer {
     .spotlight div h3 {
       font-weight: 700;
       line-height: 1.15; }
-    .spotlight div button {
-      background: transparent;
-      border: 1px solid #fff;
-      border-radius: 4px;
-      padding: 10px;
-      display: block;
-      margin: 10px 0;
-      font-weight: 700;
-      outline: none; }
-      .spotlight div button a {
-        color: #fff;
-        text-decoration: none; }
-    .spotlight div button:hover {
-      background: #fff; }
-      .spotlight div button:hover a {
-        color: #28BE9B; }
 
 .sign-up {
   background: #fff0c8;
-  width: 40%;
+  width: 39%;
   float: left;
-  height: 210px;
+  margin: 0 5px;
   padding: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center; }
+  .sign-up label {
+    display: block;
+    padding: 15px 0 0 0; }
+    .sign-up label input {
+      border: none;
+      width: 65%;
+      padding: 5px; }
+  .sign-up button {
+    margin: 15px auto 0; }
+    .sign-up button a {
+      color: #333; }
   .sign-up h4 {
     font-weight: 700;
     line-height: 1.15;
     font-size: 1.2; }
 
+@media (max-width: 925px) {
+  .spotlight, .sign-up {
+    height: 300px; } }
 @media (max-width: 767px) {
-  .home-block {
+  .home-block, .spotlight {
     margin: 0 5px 15px;
     float: left;
     width: 48%;
-    box-sizing: border-box; } }
-@media (max-width: 500px) {
-  .home-block {
+    height: 475px;
+    box-sizing: border-box; }
+
+  .spotlight img {
+    float: none;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0 0; }
+  .spotlight div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; }
+    .spotlight div button {
+      display: block;
+      margin: 10px auto; }
+
+  .sign-up {
+    width: 98%;
     float: left;
-    width: 100%; } }
+    margin: 1%;
+    height: 180px; }
+    .sign-up label {
+      width: 40%;
+      display: inline-block;
+      padding: 15px 0 0 0; }
+      .sign-up label input {
+        width: 80%; } }
+@media (max-width: 690px) {
+  .sign-up {
+    height: 210px; } }
+@media (max-width: 500px) {
+  .home-block, .spotlight {
+    float: left;
+    width: 96%;
+    margin: 2%; } }
+@media (max-width: 360px) {
+  .spotlight {
+    height: 460px; }
+
+  .sign-up {
+    height: 250px; } }
 #dogs .section-margin {
   margin: 2% 10%; }
 
