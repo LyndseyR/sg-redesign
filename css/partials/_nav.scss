@@ -1,0 +1,255 @@
+/////////////////////
+// Header///////////
+///////////////////
+
+// Mobile Navigation
+.mobile-nav {
+  height:75px;
+  background-color: $teal;
+  display: none;
+  top:0;
+  width:100%;
+  z-index: 100;
+
+  img {
+    height:50px;
+  }
+
+  .donate {
+    padding: 5px 30px;
+     background:transparent;
+     border:1px solid #fff;
+     border-radius: 8px;
+     outline-color:#fff;
+     width:40%;
+
+     a{
+     color:#fff;
+     text-decoration: none;
+     font-weight:700;
+     }
+  }
+  .donate:hover {
+    background:#fff;
+    a {
+      color:$teal;
+    }
+  }
+}
+
+.hamburger {
+   position: relative;
+   border:none;
+   background-color:#fff;
+   color:$teal;
+   outline:0;
+   top:0;
+   border-radius: 4px;
+   padding: 3px 6px;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top:60px;
+  right:0px;
+  li {
+    list-style-type: none;
+    a{
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      background:$teal;
+      color:#fff;
+      width: 100px;
+      text-align: right;
+      margin-right:0;
+    }
+    a:hover {
+      background:#fff;
+      color:$teal;
+      font-weight: 700;
+    }
+  }
+}
+
+
+// Desktop Navigation
+header {
+  background-color: $teal;
+  .desktop-nav {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin:0 auto;
+
+  img {
+    height: 70px;
+  }
+
+    ul {
+      position: relative;
+      z-index: 100;
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          color: #fff;
+          padding:5px 0;
+          margin: 0 5px;
+          text-decoration: none;
+          border-bottom: 3px solid transparent;
+        }
+        a:hover {
+          font-weight: 700;
+          padding-bottom: 5px;
+          border-bottom: 3px solid #fff;
+        }
+
+        ul {
+          position: absolute;
+          top: 28px;
+          display: none;
+          // z-index: 100;
+          a {
+              display: block;
+              width: 115px;
+              background: #fff;
+              padding-left: 5px;
+              color: $teal;
+            }
+          a:hover{
+              border-bottom-color: transparent;
+              background: $teal;
+              color: #fff;
+            }
+        }
+      }
+
+      li:hover ul {
+          display: block;
+        }
+    }
+  }
+}
+
+#dropdown-menu li {
+  margin: 0 !important;
+}
+
+#donate-button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+#donate-button:hover {
+  color: $teal;
+  background: #fff;
+  border-bottom-color: transparent;
+  font-weight: 700;
+}
+
+// 4 Dog images
+
+.header-images {
+  width: 100%;
+  margin: 0;
+  font-size: 0;
+
+  .home-dog {
+    height: 255px;
+    // width: 100%;
+    // box-sizing: border-box;
+    margin: 0;
+  }
+  img:nth-child(odd) {
+    width: 30%;
+    height: 255px;
+    object-fit: cover;
+  }
+  img:nth-child(even) {
+    width: 20%;
+    height: 255px;
+    object-fit: cover;
+  }
+}
+
+///////////////////////////
+// Footer ////////////////
+//////////////////////////
+
+footer {
+  clear:both;
+  background: $teal;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1% 5%;
+
+  .contact, .email, .address {
+    color: white;
+    font-weight: 300;
+    font-size: .9rem;
+
+    a {
+      letter-spacing: .01rem;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+///////////////////////////
+// Media Queries///////////
+//////////////////////////
+
+@media (max-width: 767px){
+  header {
+    .desktop-nav {
+      display: none;
+    }
+    #donate-button {
+      display: none;
+    }
+  }
+
+  .mobile-nav{
+    // padding: 0 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    .logo {
+      height: 50px;
+    }
+  }
+
+  .header-images {
+
+    img:nth-child(even) {
+      display: none;
+    }
+    img:nth-child(odd) {
+      width: 50%;
+    }
+  }
+
+  footer {
+    padding: 0 2%;
+    font-size: .8rem;
+    flex-flow: column;
+
+    .contact {
+      display: inline-block;
+      width:100%;
+      text-align: center;
+    }
+  }
+}

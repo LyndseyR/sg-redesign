@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Grace</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+  </head>
+  <body>
+
+    <header>
+      <!-- Mobile Nav  -->
+      <div class="mobile-nav">
+        <a href="index.html"><img class="logo" src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
+        <button class="donate"><a href="#">Donate</a></button>
+        <button class="hamburger">&#9776;</button>
+          <ul class="hamburger-menu">
+            <li style="margin-top:0;margin-bottom:0;"><a href="dogs.html">Our Dogs</a></li>
+            <li style="margin-top:0;margin-bottom:0;"><a href="adoption.html">Adoption</a></li>
+             <li style="margin-top:0;margin-bottom:0;"><a href="about.html">About Us</a></li>
+             <li style="margin-top:0;margin-bottom:0;"><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+      </div>
+
+      <!--Desktop Nav  -->
+      <div class="desktop-nav">
+        <a href="index.html"><img class="logo" src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
+        <ul>
+          <li><a href="dogs.html">Our Dogs</a></li>
+          <li><a href="adoption.html">Adoption</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="volunteer.html">Volunteers</a></li>
+          <li><a id="donate-button" href="#">Donate</a>
+            <ul id ="dropdown-menu">
+              <li><a href="#">Give Once</a></li>
+              <li><a href="#">Give Monthly</a></li>
+              <li><a href="#">Sponsor a Dog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero-slider">
+      <div><img src="images/home/hero.jpg" alt="Dog lying on bench"></div>
+      <div><img src="images/home/hero1.jpg" alt="Dog playing with stick"></div>
+      <div><img src="images/home/hero2.jpg" alt="Puppy running"></div>
+      <div><img src="images/home/hero3.jpg" alt="German Shepard looking out window"></div>
+      <div><img src="images/home/hero4.jpg" alt="Dog running"></div>
+    </section>
+
+    <section class="home-content">
+      <div class="welcome">
+        <h1>Adopted dogs make wonderful pets!</h1>
+        <p class="tagline">Here at Saving Grace we strive to match the perfect dog with the perfect family. It needs to be the right fit for everyone! We're a non-profit organization dedicated to helping homeless animals in our community find permanent find homes where they'll be loved for the rest of their lives. </p>
+      </div>
+
+      <div class="home-block adopt">
+        <img src="images/home/adopt-dog.jpg" alt="Dog with paw in air">
+        <div class="home-block-content">
+          <h3>Why adoption?</h3>
+          <p>Dogs at Saving Grace are selected from local shelters where lack of kennel space keeps animals from being placed up for adoption. All dogs are evaluated for temperament and suitability as a family pet.</p>
+          <button><a href="adoption.html">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="home-block program">
+        <img src="images/home/program-dog.jpg" alt="Dog with paw in air">
+        <div class="home-block-content">
+          <h3>Saving Grace Program</h3>
+          <p>The evaluation continues when the dog is brought into the Saving Grace program. They have access to lots of fresh air and space to run and play together with other dogs. We observe their interaction with new dogs and people on a daily basis.</p>
+          <button><a href="about.html">Learn More</a></button>
+        </div>
+      </div>
+
+      <div class="home-block good-dog">
+        <img src="images/home/good-dog.jpg" alt="Puppy on counter">
+        <div class="home-block-content">
+          <h3>Good Dog!</h3>
+          <p>The dogs that come to Saving Grace are hand-picked as the best dogs in the world, and then they get even better! We only select dogs that get along with other dogs and people. We can help you pick those that would get along best with a family.</p>
+          <button><a href="dogs.html">Learn More</a></button>
+        </div>
+      </div>
+
+      <!-- <div class="home-block matchmaker clearfix">
+        <img src="images/home/good-dog.jpg" alt="Golden Retriever">
+        <div class="home-block-content">
+          <h3>Matchmaker</h3>
+          <p>Saving Grace keeps about 60 to 80 dogs available for adoption and generally has a variety of sizes, shapes, ages and temperaments. When an adopting family comes to Saving Grace, we want to learn as much about you as we know about our dogs.</p>
+          <button>Get Matched</button>
+        </div>
+      </div> -->
+
+      <div class="spotlight">
+        <img src="images/home/spotlight-paw.gif" alt="Spotlight Dog">
+        <div>
+          <h3>Spotlight</h3>
+          <p>Bumper is one special dude! He has limited vision, most likely born with vision impairment but that does not stop him from loving on everyone. His front legs are a little shorter than his rear which adds to his character.</p>
+          <button><a href="#">Adopt Him</a></button>
+        </div>
+      </div>
+
+      <div class="sign-up">
+        <h4>Sign up for our email list for updates, news and more.</h4>
+        <label>Name <input type="text"></label>
+        <label>Email Address<input type="text"></label>
+      </div>
+
+    </section>
+
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/remodal.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- <script>
+      $('.main-nav').load('includes/nav.html');
+      $('footer').load('includes/footer.html');
+    </script> -->
+
+  </body>
+</html>
