@@ -14,36 +14,6 @@
   <body>
 
     <header>
-      <!-- Mobile Nav  -->
-      <div class="mobile-nav">
-        <a href="index.html"><img class="logo" src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
-        <button class="donate"><a href="#">Donate</a></button>
-        <button class="hamburger">&#9776;</button>
-          <ul class="hamburger-menu">
-            <li style="margin-top:0;margin-bottom:0;"><a href="dogs.html">Our Dogs</a></li>
-            <li style="margin-top:0;margin-bottom:0;"><a href="adoption.html">Adoption</a></li>
-             <li style="margin-top:0;margin-bottom:0;"><a href="about.html">About Us</a></li>
-             <li style="margin-top:0;margin-bottom:0;"><a href="volunteer.html">Volunteer</a></li>
-          </ul>
-      </div>
-
-      <!--Desktop Nav  -->
-      <div class="desktop-nav">
-        <a href="index.html"><img class="logo" src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
-        <ul>
-          <li><a href="dogs.html">Our Dogs</a></li>
-          <li><a href="adoption.html">Adoption</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="volunteer.html">Volunteers</a></li>
-          <li><a id="donate-button" href="#">Donate</a>
-            <ul id ="dropdown-menu">
-              <li><a href="#">Give Once</a></li>
-              <li><a href="#">Give Monthly</a></li>
-              <li><a href="#">Sponsor a Dog</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <section class="hero-slider">
@@ -57,7 +27,7 @@
     <section class="home-content">
       <div class="welcome">
         <h1>Adopted dogs make wonderful pets!</h1>
-        <p class="tagline">Here at Saving Grace we strive to match the perfect dog with the perfect family. It needs to be the right fit for everyone! We're a non-profit organization dedicated to helping homeless animals in our community find permanent find homes where they'll be loved for the rest of their lives. </p>
+        <p class="tagline">Here at Saving Grace we strive to match the perfect dog with the perfect family. It needs to be the right fit for everyone! We're a non-profit organization dedicated to helping homeless animals in our community find permanent homes where they'll be loved for the rest of their lives. </p>
       </div>
 
       <div class="home-block adopt">
@@ -108,7 +78,7 @@
       <div class="sign-up">
         <h4>Sign up for our email list for updates, news and more.</h4>
         <label>Name: <input type="text"></label>
-        <label>Email Address: <input type="text"></label>
+        <label>Email: <input type="text"></label>
         <button><a href="#">Update Me!</a></button>
       </div>
 
@@ -123,10 +93,10 @@
     <script type="text/javascript" src="js/slick.js"></script>
     <script src="js/script.js"></script>
 
-    <!-- <script>
-      $('.main-nav').load('includes/nav.html');
+    <script>
+      $('header').load('includes/nav.html');
       $('footer').load('includes/footer.html');
-    </script> -->
+    </script>
 
   </body>
 </html>

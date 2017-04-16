@@ -16,7 +16,7 @@
 }
 
 .home-content {
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -91,13 +91,17 @@
 
 .spotlight, .sign-up {
   height: 225px;
+  margin: 0 5px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
   button {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px;
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
     font-weight: 700;
     outline:none;
     a {
@@ -115,22 +119,21 @@
 
 .spotlight {
   background-color: $light-blue;
-  margin: 0 5px 15px;
+  // margin: 0 5px 15px;
   width: 58%;
   float:left;
   img {
     float:left;
     display: block;
     border: none;
-    width: 30%;
-    padding: 35px 10px 10px;
+    width: 35%;
+    padding: 10px;
     padding-right:15px;
     box-sizing: border-box;
   }
   div {
-    width: 70%;
+    width: 65%;
     float:left;
-    padding: 15px 0;
     h3 {
       font-weight: 700;
       line-height: 1.15;
@@ -142,10 +145,8 @@
   background:$yellow-opacity;
   width: 39%;
   float:left;
-  margin: 0 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
+  // box-sizing: border-box;
+  // text-align: center;
   label {
     display: block;
     padding: 15px 0 0 0;
@@ -175,7 +176,7 @@
 
 @media (max-width: 925px) {
   .spotlight, .sign-up {
-    height: 300px;
+    height: 260px;
   }
 }
 
@@ -216,7 +217,8 @@
       display: inline-block;
       padding: 15px 0 0 0;
       input {
-        width: 80%;
+        width: 94%;
+        margin: 0 3%;
       }
     }
   }
@@ -229,16 +231,27 @@
 }
 
 @media (max-width:500px) {
+  .hero-slider {
+    div {
+      img {
+        height:300px;
+      }
+    }
+  }
+
   .home-block, .spotlight {
     float: left;
     width: 96%;
     margin: 2%;
   }
+  .spotlight {
+    height: 520px;
+  }
 }
 
 @media (max-width:360px) {
   .spotlight {
-    height: 460px;
+    height: 40px;
   }
   .sign-up {
     height: 250px;

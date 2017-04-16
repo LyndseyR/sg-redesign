@@ -43,8 +43,9 @@ $(document).ready(function(){
     fade: true,
     cssEase: 'linear'
   });
-
 });
+
+
 
 
 //Handlebars for Our Dogs page
