@@ -382,6 +382,9 @@ footer {
         width: 94%;
         margin: 0 3%; } }
 @media (max-width: 690px) {
+  .welcome h1 {
+    font-size: 36px; }
+
   .sign-up {
     height: 210px; } }
 @media (max-width: 500px) {

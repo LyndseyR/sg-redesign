@@ -225,6 +225,12 @@
 }
 
 @media (max-width:690px) {
+  .welcome {
+    h1 {
+      font-size: 36px;
+    }
+  }
+
   .sign-up {
     height: 210px;
   }
