@@ -4,6 +4,11 @@
   background: $light-blue-opacity;
 }
 
+.volunteer, .foster {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 #volunteer {
   form {
     background: $orange-opacity;
@@ -84,6 +89,10 @@
 }
 
 @media (max-width: 767px){
+  #volunteer {
+    margin-top: 75px;
+  }
+
   .content-float {
     width: 100%;
     float: none;

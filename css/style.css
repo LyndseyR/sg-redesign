@@ -619,6 +619,10 @@ footer {
 .volunteer {
   background: #c8edef; }
 
+.volunteer, .foster {
+  max-width: 1024px;
+  margin: 0 auto; }
+
 #volunteer form {
   background: #fcc4af;
   padding: 15px 20px;
@@ -683,6 +687,9 @@ footer {
       margin-top: 0px; }
 
 @media (max-width: 767px) {
+  #volunteer {
+    margin-top: 75px; }
+
   .content-float {
     width: 100%;
     float: none; }
@@ -708,11 +715,16 @@ footer {
 #about .mission-background {
   background: #c8edef;
   height: auto;
-  margin: 0 0;
   width: 100%; }
+  #about .mission-background .header-padding, #about .mission-background h2, #about .mission-background p {
+    padding: 2% 5%;
+    max-width: 1024px;
+    margin: 0 auto; }
 
-#about .header-padding {
-  padding: 2% 10%; }
+.our-pack {
+  padding: 2% 5%;
+  max-width: 1024px;
+  margin: 0 auto; }
 
 #about .paragraph-padding {
   padding: 0% 10% 2% 10%; }
@@ -765,7 +777,12 @@ footer {
   font-size: 1.25rem;
   font-weight: 700; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  #about .misson-background {
+    margin-top: 75px; }
+    #about .misson-background .header-padding {
+      border: 10px solid blue; }
+
   #about .row {
     flex-wrap: wrap; }
 

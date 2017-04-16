@@ -1,12 +1,19 @@
 #about .mission-background {
   background: $light-blue-opacity;
   height: auto;
-  margin: 0 0;
   width: 100%;
+
+  .header-padding, h2, p {
+    padding: 2% 5%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
-#about .header-padding {
-  padding: 2% 10%;
+.our-pack {
+  padding: 2% 5%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 #about .paragraph-padding {
@@ -76,7 +83,17 @@
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+  #about {
+    // margin-top: 75px;
+    .misson-background {
+      margin-top: 75px;
+      .header-padding {
+        border:10px solid blue;
+      }
+    }
+  }
   #about .row {
     flex-wrap: wrap;
   }
