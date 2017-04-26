@@ -206,7 +206,7 @@ footer {
     width: 50%; }
 
   footer {
-    padding: 0 2%;
+    padding: 1% 2%;
     font-size: .8rem;
     flex-flow: column; }
     footer .contact {
@@ -256,21 +256,21 @@ footer {
     .home-block .home-block-content h3 {
       font-weight: 700;
       line-height: 1.15; }
-  .home-block button {
+  .home-block .button {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px;
     display: block;
+    width: 100px;
     margin: 10px auto;
-    font-weight: 700;
-    outline: none; }
-    .home-block button a {
+    font-weight: 700; }
+    .home-block .button a {
       color: #fff;
       text-decoration: none; }
-  .home-block button:hover {
+  .home-block .button:hover {
     background: #fff; }
-    .home-block button:hover a {
+    .home-block .button:hover a {
       color: #28BE9B; }
 
 .adopt {
@@ -288,21 +288,21 @@ footer {
   padding: 10px;
   box-sizing: border-box;
   text-align: center; }
-  .spotlight button, .sign-up button {
+  .spotlight .button, .sign-up .button {
     background: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     padding: 10px;
     display: block;
+    width: 100px;
     margin: 10px auto;
-    font-weight: 700;
-    outline: none; }
-    .spotlight button a, .sign-up button a {
+    font-weight: 700; }
+    .spotlight .button a, .sign-up .button a {
       color: #fff;
       text-decoration: none; }
-  .spotlight button:hover, .sign-up button:hover {
+  .spotlight .button:hover, .sign-up .button:hover {
     background: #fff; }
-    .spotlight button:hover a, .sign-up button:hover a {
+    .spotlight .button:hover a, .sign-up .button:hover a {
       color: #28BE9B; }
 
 .spotlight {
@@ -318,8 +318,10 @@ footer {
     padding-right: 15px;
     box-sizing: border-box; }
   .spotlight div {
-    width: 65%;
-    float: left; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
     .spotlight div h3 {
       font-weight: 700;
       line-height: 1.15; }
@@ -335,9 +337,9 @@ footer {
       border: none;
       width: 65%;
       padding: 5px; }
-  .sign-up button {
+  .sign-up .button {
     margin: 15px auto 0; }
-    .sign-up button a {
+    .sign-up .button a {
       color: #333; }
   .sign-up h4 {
     font-weight: 700;
@@ -420,7 +422,8 @@ footer {
   float: left;
   width: 200px;
   margin: 1.75% 3%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
 
 #dogs .dog-images {
   filter: grayscale(100%);
